@@ -99,7 +99,7 @@ let yourBtc = 400;
 
 const loadBtc = async function () {
   try {
-    request('GET','https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=1&CMC_PRO_API_KEY=6bffc175-6e61-481b-ab57-5fc818dda1cb').then((r1) => {
+    request('GET','there will be enpoint').then((r1) => {
     const valueofText = JSON.parse(r1.target.responseText);
     btcToUsd =valueofText.data[1].quote.USD;
     return btcToUsd;
